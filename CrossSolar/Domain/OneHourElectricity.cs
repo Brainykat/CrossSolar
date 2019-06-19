@@ -13,7 +13,7 @@ namespace CrossSolar.Domain
 
         public string PanelId { get; set; }
 
-        public long KiloWatt { get; set; }
+        public decimal KiloWatt { get; set; }
 
         public DateTime DateTime { get; set; }
     }

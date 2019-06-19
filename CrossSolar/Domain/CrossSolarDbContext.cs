@@ -14,9 +14,9 @@ namespace CrossSolar.Domain
 
         public DbSet<OneHourElectricity> OneHourElectricitys { get; set; }
 
-        public CrossSolarDbContext()
-        {  
-        }
+        //public CrossSolarDbContext()
+        //{  
+        //}
         public CrossSolarDbContext(DbContextOptions<CrossSolarDbContext> options) : base(options)
         {
         }

@@ -17,9 +17,9 @@ namespace CrossSolar.Controllers
         {
             _panelRepository = panelRepository;
         }
-       
-        // POST api/panel
-        [HttpPost]
+
+		// POST api/panel
+		[HttpPost]
         public async Task<IActionResult> Register([FromBody]PanelModel value)
         {
             if (!ModelState.IsValid)

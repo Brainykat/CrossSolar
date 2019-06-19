@@ -12,6 +12,7 @@ namespace CrossSolar.Domain
         public double Longitude { get; set; }
 
         [Required]
+		
         public string Serial { get; set; }
 
         public string Brand { get; set; }

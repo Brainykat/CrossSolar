@@ -29,7 +29,9 @@ namespace CrossSolar
         {
             services.AddDbContext<CrossSolarDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddTransient<IPanelRepository, PanelRepository>();
+			var conn = Configuration.GetConnectionString("DefaultConnection");
+
+			services.AddTransient<IPanelRepository, PanelRepository>();
             services.AddTransient<IAnalyticsRepository, AnalyticsRepository>();
             services.AddTransient<IDayAnalyticsRepository, DayAnalyticsRepository>();
             services.AddMvc();
